@@ -81,17 +81,7 @@ export default function Hero() {
             </div>
            </motion.div>
              
-              {/* ChatGPT提示区域 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="text-center mt-8"
-              >
-                 <p className="text-gray-400 text-3xl">
-                   所有的知识点都可以通过ChatGPT搜索
-                 </p>
-              </motion.div>
+
               
               {/* 作者链接区域 */}
               <div 

@@ -13,10 +13,4 @@ function getPlugins() {
 
 export default defineConfig({
   plugins: getPlugins(),
-
-  // ✅ 新增：构建输出目录
-  build: {
-    outDir: "dist",
-    emptyOutDir: true, // 构建前清空目录（可选）
-  },
 });
