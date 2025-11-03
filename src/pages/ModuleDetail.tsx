@@ -172,28 +172,41 @@ export default function ModuleDetail() {
               "设置任务提醒，避免错过重要空投机会"
             ]
           };
-        case 'module-5':
+                        case 'module-5':
           return {
-            introduction: "DePIN (Decentralized Physical Infrastructure Networks) 是通过区块链激励构建的物理基础设施网络。本模块将学习DePIN的硬件设备、挖矿机制和UBI等典型项目。",
+            introduction: "DePIN (Decentralized Physical Infrastructure Networks) 是一种革命性的技术范式，通过区块链激励机制将物理世界的基础设施网络与数字经济系统相结合。本模块将全面解析DePIN的工作原理、参与方式、硬件要求以及潜在的投资和参与机会，帮助你从零基础入门并掌握这个新兴领域的核心知识。",
             learningContent: [
-              "什么是DePIN？ - 去中心化物理基础设施网络的概念和特点",
-              "DePIN的核心价值 - 将物理世界资产与区块链经济模型结合",
-              "DePIN硬件设备类型 - 不同项目所需的专用和通用硬件设备",
-              "DePIN挖矿机制 - 贡献物理资源获取代币奖励的工作原理",
-              "什么是UBI项目？ - 全民基本收入模式的DePIN平台解析",
-              "Helium网络详解 - 去中心化无线网络的先驱项目",
-              "DePIN经济模型 - 代币分配、激励机制和可持续性设计",
-              "DePIN与传统云服务的区别 - 去中心化vs中心化的优劣对比",
-              "常见DePIN应用场景 - 网络覆盖、数据存储、计算资源共享等",
-              "参与DePIN的基本流程 - 从设备选择到获取收益的完整指南"
+              "DePIN的基本概念与发展历程 - 从Helium到新一代DePIN项目的演进",
+              "DePIN的核心价值主张 - 去中心化基础设施的优势与创新点",
+              "DePIN的技术架构 - 物理层、网络层、激励层的协同工作原理",
+              "硬件设备类型详解 - 专用设备与通用设备的区别与选择策略",
+              "挖矿与激励机制 - 如何通过贡献资源获取代币奖励",
+              "代币经济学设计 - 供应量、分配机制与价值捕获模型",
+              "Helium网络深度解析 - 去中心化无线通信的先驱案例",
+              "UBI Network运营模式 - 托管式DePIN平台如何降低参与门槛",
+              "计算类DePIN项目 - 如何通过GPU/CPU贡献算力",
+              "存储类DePIN项目 - 闲置硬盘空间的价值变现",
+              "传感器网络DePIN - IoT设备如何参与数据收集",
+              "DePIN与传统云服务的对比分析 - 成本、安全性、去中心化程度的差异",
+              "参与DePIN的风险评估 - 技术风险、市场风险与政策风险",
+              "硬件采购与部署指南 - 如何选择合适的设备并进行优化配置",
+              "收益计算与优化策略 - 最大化投资回报率的实用技巧",
+              "DePIN生态系统分析 - 开发者、用户、投资者的角色定位",
+              "未来发展趋势预测 - AI、5G等技术如何推动DePIN创新",
+              "多链战略与跨链互操作性 - DePIN项目如何在多链环境中发展",
+              "监管合规与政策考量 - 全球不同地区的法律框架与合规要求"
             ],
             learningSuggestions: [
-              "从了解典型DePIN项目开始，掌握基本概念",
-              "关注硬件成本与收益比，避免盲目投入",
-              "研究项目白皮书，理解代币经济和长期价值",
-              "参与DePIN社区，交流设备配置和优化经验",
-              "从小规模试点开始，逐步扩大参与规模",
-              "关注监管政策变化，确保合规参与"
+              "从研究一个具体的DePIN项目开始，例如Helium或UBI Network，深入了解其运作机制",
+              "关注硬件成本、电力消耗、网络要求等实际运营成本，进行全面的投资回报率分析",
+              "加入DePIN项目的官方Discord和Telegram社区，获取第一手信息并与其他参与者交流经验",
+              "定期查阅项目的白皮书、技术文档和经济模型，理解其长期发展潜力",
+              "从小规模试点开始，先部署少量设备测试实际收益情况，再逐步扩大规模",
+              "关注行业媒体和分析师对DePIN领域的深度报道和市场分析",
+              "学习基础的网络和硬件知识，有助于理解设备配置和故障排查",
+              "使用DePIN项目提供的监控工具和数据分析平台，实时跟踪设备状态和收益情况",
+              "了解相关的税收政策和会计处理方法，确保合规参与并优化税务成本",
+              "持续关注技术演进和新项目动态，及时调整参与策略以把握新机会"
             ]
           };
        case 'module-6':
@@ -6741,8 +6754,357 @@ case 'module-11':
                     )}
 
                     {/* 空投任务平台详细内容 */}
-                    {module.id === 'module-4' && (
-                      <motion.div
+                       {module.id === 'module-5' && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, delay: 0.15 }}
+                          className="mb-12"
+                        >
+                          <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
+                            <i className="fa-solid fa-server text-green-400 mr-2"></i>
+                            DePIN参与逻辑详解
+                          </h2>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-check-circle text-green-400 mr-2"></i>
+                              什么是DePIN？
+                            </h3>
+                            <p className="text-gray-300 mb-4">
+                              DePIN (Decentralized Physical Infrastructure Networks) 即去中心化物理基础设施网络，是一种通过区块链技术将物理世界的基础设施（如网络设备、计算资源、存储设备等）连接起来，并通过代币激励机制鼓励用户参与和维护这些基础设施的新型网络模式。
+                            </p>
+                            
+                            <div className="bg-blue-900/10 border border-blue-800/30 rounded-lg p-4 mt-4">
+                              <p className="text-gray-300 italic font-medium">
+                                一句话总结：<br/>
+                                DePIN = 区块链 + 物理设备 + 共享经济
+                              </p>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-sitemap text-yellow-400 mr-2"></i>
+                              DePIN的核心价值与特点
+                            </h3>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">核心价值</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>将闲置物理资源转化为数字资产</li>
+                                  <li>降低基础设施建设和维护成本</li>
+                                  <li>提高资源利用效率和覆盖范围</li>
+                                  <li>通过代币激励促进社区参与和网络扩展</li>
+                                </ul>
+                              </div>
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">主要特点</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>去中心化：不依赖中心化机构运营</li>
+                                  <li>开放参与：任何人都可以贡献资源并获得奖励</li>
+                                  <li>透明治理：通过区块链技术实现透明的网络治理</li>
+                                  <li>弹性扩展：网络可以根据需求灵活扩展</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-microchip text-blue-400 mr-2"></i>
+                              DePIN硬件设备类型
+                            </h3>
+                            
+                            <div className="space-y-6">
+                              <div>
+                                <h4 className="text-lg font-medium text-white mb-3">常见设备类型</h4>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                  <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                                    <h5 className="text-white font-medium mb-2">网络设备</h5>
+                                    <p className="text-gray-300 text-sm">Wi-Fi路由器、移动通信设备、LoRa网关等</p>
+                                    <p className="text-blue-400 text-xs mt-1">代表项目：Helium、IoTeX</p>
+                                  </div>
+                                  <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                                    <h5 className="text-white font-medium mb-2">存储设备</h5>
+                                    <p className="text-gray-300 text-sm">硬盘、服务器、分布式存储节点等</p>
+                                    <p className="text-blue-400 text-xs mt-1">代表项目：Filecoin、Storj</p>
+                                  </div>
+                                  <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                                    <h5 className="text-white font-medium mb-2">计算设备</h5>
+                                    <p className="text-gray-300 text-sm">CPU/GPU矿机、边缘计算设备等</p>
+                                    <p className="text-blue-400 text-xs mt-1">代表项目：Render Network、Akash Network</p>
+                                  </div>
+                                  <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                                    <h5 className="text-white font-medium mb-2">传感器设备</h5>
+                                    <p className="text-gray-300 text-sm">环境监测、物联网传感器等</p>
+                                    <p className="text-blue-400 text-xs mt-1">代表项目：Hivemapper、DIMO</p>
+                                  </div>
+                                  <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                                    <h5 className="text-white font-medium mb-2">混合设备</h5>
+                                    <p className="text-gray-300 text-sm">集成多种功能的综合设备</p>
+                                    <p className="text-blue-400 text-xs mt-1">代表项目：UBI Network、Io.net</p>
+                                  </div>
+                                  <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                                    <h5 className="text-white font-medium mb-2">专用设备</h5>
+                                    <p className="text-gray-300 text-sm">为特定DePIN项目设计的专用硬件</p>
+                                    <p className="text-blue-400 text-xs mt-1">代表项目：Helium热点、SenseCAP设备</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-coins text-yellow-400 mr-2"></i>
+                              DePIN挖矿机制详解
+                            </h3>
+                            
+                            <div className="space-y-6">
+                              <div>
+                                <h4 className="text-lg font-medium text-white mb-3">基础原理</h4>
+                                <div className="bg-gray-800 rounded-lg p-5">
+                                  <ol className="list-decimal pl-6 text-gray-300 space-y-3">
+                                    <li>
+                                      用户购买或部署符合项目要求的硬件设备
+                                    </li>
+                                    <li>
+                                      设备连接到DePIN网络，提供特定服务（如网络覆盖、存储、计算等）
+                                    </li>
+                                    <li>
+                                      网络通过智能合约自动记录设备贡献的工作量
+                                    </li>
+                                    <li>
+                                      根据贡献量，网络定期向用户发放代币奖励
+                                    </li>
+                                    <li>
+                                      用户可以在交易所出售代币或继续持有参与治理
+                                    </li>
+                                  </ol>
+                                </div>
+                              </div>
+                              
+                              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                  <h4 className="text-white font-medium mb-2">常见奖励机制</h4>
+                                  <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                    <li><strong>工作量证明（PoW）：</strong>根据设备实际提供的服务量计算奖励</li>
+                                    <li><strong>空间证明（PoSpace）：</strong>根据提供的存储空间大小和时间计算奖励</li>
+                                    <li><strong>带宽证明（PoB）：</strong>根据提供的网络带宽计算奖励</li>
+                                    <li><strong>有用工作证明（PoUW）：</strong>根据完成的实际有用工作计算奖励</li>
+                                  </ul>
+                                </div>
+                                <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                  <h4 className="text-white font-medium mb-2">影响收益的因素</h4>
+                                  <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                    <li>设备性能和规格</li>
+                                    <li>网络覆盖范围和密度</li>
+                                    <li>提供服务的质量和稳定性</li>
+                                    <li>代币市场价格波动</li>
+                                    <li>网络难度调整和奖励衰减</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-globe text-purple-400 mr-2"></i>
+                              UBI Network项目解析
+                            </h3>
+                            
+                            <div className="bg-gray-800 rounded-lg p-5 mb-6">
+                              <div className="flex items-center mb-3">
+                                <i className="fa-solid fa-globe text-blue-400 mr-2"></i>
+                                <a href="https://ubinetwork.ai" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">https://ubinetwork.ai</a>
+                              </div>
+                              <p className="text-gray-300 mb-3">
+                                UBI Network是一个创新的DePIN平台，旨在通过整合闲置计算资源，为用户提供一种简单的"盒子挖矿"方式参与Web3生态。用户只需购买UBI的硬件盒子，连接网络电源，即可自动参与网络并获得代币奖励。
+                              </p>
+                              <div className="text-sm text-gray-400 space-y-1">
+                                <p><strong className="text-white">核心特点：</strong>托管式挖矿、低门槛参与、多维度收益</p>
+                                <p><strong className="text-white">适合人群：</strong>希望简单参与DePIN而不需要专业技术知识的普通用户</p>
+                              </div>
+                            </div>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">UBI盒子工作原理</h4>
+                                <ol className="list-decimal pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>用户购买并激活UBI硬件盒子</li>
+                                  <li>盒子自动连接到UBI网络</li>
+                                  <li>根据网络需求，盒子自动参与各种计算任务</li>
+                                  <li>系统自动记录贡献并计算收益</li>
+                                  <li>定期将收益发放到用户钱包</li>
+                                </ol>
+                              </div>
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">UBI代币经济模型</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>总量有限，通过挖矿逐步释放</li>
+                                  <li>收益与盒子性能、在线时间相关</li>
+                                  <li>代币可用于支付网络服务或在交易所交易</li>
+                                  <li>持有代币可参与网络治理</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-wifi text-green-400 mr-2"></i>
+                              Helium网络详解
+                            </h3>
+                            
+                            <div className="bg-gray-800 rounded-lg p-5 mb-6">
+                              <div className="flex items-center mb-3">
+                                <i className="fa-solid fa-globe text-blue-400 mr-2"></i>
+                                <a href="https://helium.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">https://helium.com</a>
+                              </div>
+                              <p className="text-gray-300 mb-3">
+                                Helium是DePIN领域的先驱项目，最初专注于构建去中心化的物联网（IoT）无线网络。用户通过部署Helium热点设备，提供网络覆盖，获得HNT代币奖励。后来，Helium扩展到5G网络和移动网络领域，成为多网络DePIN生态系统。
+                              </p>
+                              <div className="text-sm text-gray-400 space-y-1">
+                                <p><strong className="text-white">核心价值：</strong>去中心化无线网络覆盖、低功耗物联网连接</p>
+                                <p><strong className="text-white">技术特点：</strong>LoRaWAN技术、Proof of Coverage共识机制</p>
+                              </div>
+                            </div>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">Helium热点类型</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li><strong>全功能热点：</strong>提供网络覆盖和挖矿功能</li>
+                                  <li><strong>轻量级热点：</strong>成本更低，功能相对简化</li>
+                                  <li><strong>移动热点：</strong>支持5G网络覆盖</li>
+                                </ul>
+                              </div>
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">Proof of Coverage机制</h4>
+                                <ol className="list-decimal pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>热点通过发送测试信号验证彼此的覆盖范围</li>
+                                  <li>系统根据信号强度和距离计算覆盖效果</li>
+                                  <li>根据覆盖质量和范围发放HNT代币奖励</li>
+                                  <li>防止作弊机制确保网络的真实覆盖</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-lightbulb text-yellow-400 mr-2"></i>
+                              如何开始参与DePIN？
+                            </h3>
+                            
+                            <div className="bg-gray-800 rounded-lg p-5">
+                              <ol className="list-decimal pl-6 text-gray-300 space-y-3">
+                                <li>
+                                  <strong>选择适合的DePIN项目：</strong>
+                                  <p className="text-sm mt-1">根据个人兴趣、预算和技术能力选择合适的DePIN项目，研究其白皮书、团队背景和社区活跃度</p>
+                                </li>
+                                <li>
+                                  <strong>准备必要设备：</strong>
+                                  <p className="text-sm mt-1">根据项目要求购买或准备相应的硬件设备，注意设备的兼容性和性价比</p>
+                                </li>
+                                <li>
+                                  <strong>设置并连接设备：</strong>
+                                  <p className="text-sm mt-1">按照项目指南设置设备，连接网络和电源，确保设备正常运行</p>
+                                </li>
+                                <li>
+                                  <strong>创建并配置钱包：</strong>
+                                  <p className="text-sm mt-1">创建项目支持的加密货币钱包，用于接收和管理奖励代币</p>
+                                </li>
+                                <li>
+                                  <strong>激活设备并开始挖矿：</strong>
+                                  <p className="text-sm mt-1">通过项目的官方平台激活设备，开始参与网络并获取奖励</p>
+                                </li>
+                                <li>
+                                  <strong>监控和维护：</strong>
+                                  <p className="text-sm mt-1">定期检查设备运行状态，及时处理问题，确保持续获得奖励</p>
+                                </li>
+                                <li>
+                                  <strong>管理收益：</strong>
+                                  <p className="text-sm mt-1">根据市场情况决定是持有还是出售代币，考虑税收和风险因素</p>
+                                </li>
+                              </ol>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-shield-alt text-red-400 mr-2"></i>
+                              DePIN参与的风险与注意事项
+                            </h3>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">主要风险</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li><strong>设备成本风险：</strong>硬件投资可能无法通过奖励收回</li>
+                                  <li><strong>代币价格波动：</strong>奖励代币价格可能大幅下跌</li>
+                                  <li><strong>技术风险：</strong>设备故障、网络问题或项目技术缺陷</li>
+                                  <li><strong>监管风险：</strong>相关法律法规可能发生变化</li>
+                                  <li><strong>项目风险：</strong>项目可能失败或被淘汰</li>
+                                </ul>
+                              </div>
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">注意事项</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>分散投资，避免将所有资金投入单一项目</li>
+                                  <li>研究项目的经济模型和可持续性</li>
+                                  <li>注意设备的能耗和维护成本</li>
+                                  <li>选择信誉良好的设备供应商</li>
+                                  <li>定期备份钱包和重要数据</li>
+                                  <li>关注项目社区和官方更新</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 mb-6">
+                            <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+                              <i className="fa-solid fa-rocket text-purple-400 mr-2"></i>
+                              DePIN的未来发展趋势
+                            </h3>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">技术趋势</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>更高效的共识机制和激励模型</li>
+                                  <li>更低功耗、更智能的设备设计</li>
+                                  <li>跨链互操作性增强</li>
+                                  <li>AI与DePIN的结合</li>
+                                </ul>
+                              </div>
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700">
+                                <h4 className="text-white font-medium mb-2">应用趋势</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>5G和6G网络的去中心化部署</li>
+                                  <li>边缘计算的广泛应用</li>
+                                  <li>物联网设备的大规模连接</li>
+                                  <li>去中心化存储和CDN服务</li>
+                                </ul>
+                              </div>
+                              <div className="bg-gray-800 p-5 rounded-lg border border-gray-700 md:col-span-2">
+                                <h4 className="text-white font-medium mb-2">市场趋势</h4>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-1 text-sm">
+                                  <li>机构资本的持续流入</li>
+                                  <li>传统科技公司的参与度增加</li>
+                                  <li>监管框架的逐渐完善</li>
+                                  <li>与传统基建的融合发展</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                       {module.id === 'module-4' && (
+                        <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.15 }}
