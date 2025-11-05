@@ -79,7 +79,7 @@ export const cryptoModulesData: CryptoModule[] = [
     ],
     searchKeywords: ['Arbitrum', 'Optimism', 'L2交互', 'DeFi基础', 'AMM', '借贷协议'],
     category: 'blockchain',
-    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&image_size=landscape_16_9&prompt=Layer%202%20blockchain%20scaling%20solutions%20illustration&sign=2f2f8143a8601e8f7eac9e878861d92e',
+  imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=landscape_16_9&prompt=Layer%202%20blockchain%20scaling%20solutions%20illustration%20with%20correct%20text&sign=aa5541967e4282268aec48585a229bdc',
     difficulty: 'intermediate',
     popularity: 85,
   },
